@@ -1,0 +1,62 @@
+body {
+    text-align: center;
+    background: ;
+    background-size: ;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+img {
+    margin: 40px 0px 0px 0px;
+    border: 7px solid whitesmoke;
+    border-radius: 20px;
+    height: 200px;
+    width: 200px;
+    position: relative;
+    overflow: hidden;
+    object-fit: cover;
+    object-position: 100% 0;
+}
+
+h1 {
+    color: maroon;
+}
+
+li a {
+    color: whitesmoke;
+}
+
+li {
+    display: inline;
+    padding: 0px 40px 0px 0px;
+    color: whitesmoke;
+}
+
+ul {
+    padding: 10px;
+    background: black;
+}
+
+header {
+    background: url('https://www.tripsavvy.com/thmb/IOPQT-r2XbQ8Cv9wfF1t95ohA0E=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/scenic-view-of-trees-against-sky-1127828070-f539432c374a415cb1b3868722fd4f4a.jpg');
+    background-size: cover;
+}
+
+article {
+    max-width: 500px;
+    padding: 20px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+@media (max-width:500px) {
+    h1 {
+        font-size: 36px;
+    }
+    li {
+        display: block;
+        padding: 5px;
+    }
+    body {
+        background-color: whitesmoke;
+    }
+}
