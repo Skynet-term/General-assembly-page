@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html>
+    <head lang="eng">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Crete+Round:ital@1&family=Londrina+Shadow&display=swap" rel="stylesheet">
+        <title>Developers</title>
+        <link rel="stylesheet" href="business.css">
+    </head>
+
+    <body>
+        <header>
+            <header>
+                <img src="Professional.png">
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="blog.html">See my Blog</a></li>
+                    <li><a href="business.html">Business Website!</a></li>
+                    <li><a href="traffic.html">A Traffic Light!</a></li>
+                </ul>
+            </header>
+        </header>
+
+        <h1>My Work So Far!</h1>
+        <h2>Great as compared to my first webpage!</h2>
+
+        <div class="home show-description">
+            <p>Our Homepage!<br />
+            <small>Created following instructions provided by dash but utilizing
+            Visual Studio Code & Netlify to post the created webpage.
+            </small></p>
+        </div>
+
+        <div class="blog show-description">
+            <p>My Blog!<br />
+            <small>Following the same steps given and modifyign it slightly I
+            created a blog page to showcase what I know so far. Pushing
+            the repository back to github where the project was created &
+            refreshing our webpage.</small>
+            </p>
+        </div>
+
+        <div class="robot show-description">
+            <p>Our Robot Companion!<br />
+            <small>Being you're on this page specifically I wanted to show you
+            a sneak peak of whats to come next!</small>
+            </p>
+        </div>
+
+        <script>$('div').on('click', function() {$(this).toggleClass('show-description');});</script>
+
+    </body>
+</html>

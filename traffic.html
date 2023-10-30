@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+
+<head>
+  <style>
+    body {
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+    margin: 0 auto;
+    background-color: rgb(236, 236, 241);
+}
+
+img {
+    margin: 40px 0px 0px 0px;
+    border: 7px solid whitesmoke;
+    border-radius: 100px;
+    height: 200px;
+    width: 200px;
+    position: relative;
+    overflow: hidden;
+    object-fit: cover;
+    object-position: 100% 0;
+}
+
+h1 {
+    color: black;
+    font-family: 'Crete Round', serif;
+    font-size: 65px;
+}
+
+h2 {
+    margin: -50px 0 70px 0;
+}
+
+li a {
+    color: whitesmoke;
+}
+
+li {
+    display: inline;
+    padding: 0px 40px 0px 0px;
+    color: whitesmoke;
+}
+
+ul {
+    padding: 10px;
+    background: black;
+}
+
+header {
+    background: url('https://th.bing.com/th/id/R.15ecf580dff1399e210891ed3a9fff3b?rik=J1Wm%2frIdumS%2f5A&pid=ImgRaw&r=0');
+    background-size: cover;
+    background-position: 0%;
+}
+
+    #controlPanel {
+      float: left;
+      padding-top: 30px;
+    }
+
+    .button {
+      background-color: gray;
+      color: white;
+      border-radius: 10px;
+      padding: 20px;
+      text-align: center;
+      margin: 90px 40px;
+      cursor: pointer;
+    }
+
+    #traffic-light {
+      height: 550px;
+      width: 200px;
+      float: left;
+      background-color: #333;
+      border-radius: 40px;
+      margin: 30px 0;
+      padding: 20px;
+    }
+
+    .bulb {
+      height: 150px;
+      width: 150px;
+      background-color: #111;
+      border-radius: 50%;
+      margin: 25px auto;
+      transition: background 500ms;
+    }
+  </style>
+  <title>Traffic Light</title>
+</head>
+
+<body>
+    <header>
+        <header>
+            <img src="Professional.png">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="blog.html">See my Blog</a></li>
+                <li><a href="business.html">Business Website!</a></li>
+                <li><a href="traffic.html">A Traffic Light!</a></li>
+            </ul>
+        </header>
+    </header>
+  <div id="controlPanel">
+    <h1 id="stopButton" class="button">Stop</h1>
+    <h1 id="slowButton" class="button">Slow</h1>
+    <h1 id="goButton" class="button">Go</h1>
+  </div>
+  <div id="traffic-light">
+    <div id="stopLight" class="bulb"></div>
+    <div id="slowLight" class="bulb"></div>
+    <div id="goLight" class="bulb"></div>
+  </div>
+</body>
+
+<script>
+  document.getElementById('stopButton').onclick = illuminateRed;
+  document.getElementById('slowButton').onclick = illuminateYellow;
+  document.getElementById('goButton').onclick = illuminateGreen;
+
+  function illuminateRed() {
+    clearLights();
+    document.getElementById('stopLight').style.backgroundColor = "red";
+  }
+
+  function illuminateYellow() {
+    clearLights();
+    document.getElementById('slowLight').style.backgroundColor = "yellow";
+  }
+
+  function illuminateGreen() {
+    clearLights();
+    document.getElementById('goLight').style.backgroundColor = "green";
+  }
+
+  function clearLights() {
+    document.getElementById('stopLight').style.backgroundColor = "black";
+    document.getElementById('slowLight').style.backgroundColor = "black";
+    document.getElementById('goLight').style.backgroundColor = "black";
+  }
+</script>
